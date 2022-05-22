@@ -21,8 +21,8 @@
               <h1> Panja dobra</h1>
               <h2>Naručite nekakvu finu panju ispod.</h2>
               <div class="actions">
-                  <a href="#" class="main-1">Naruči</a>
-                  <a href="#" class="main-2"> Požali se </a>
+                  <a href="#" class="main-1" onclick="naruci()">Naruči</a>
+                  <a href="#" class="main-2" onclick="nemoj()"> Požali se </a>
               </div>
           </div>
       </section>
@@ -44,82 +44,68 @@
 <!---Kraj panji dana-->
 
 <!--Kreiraj dil -->
-<section>
-    <div class="section mt-5">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-3">
-                        <div class="updateForm">
-                            <h1>Dodaj novu panju</h1>
-                        <form class="form">
-                            <div class="formInputField ">
-                                <label class="tekst">ID</label>
-                                <input type="text" placeholder="Input your id here..."  id="id"/>
-                            </div>
-                            <div class="formInputField deleteModalNep">
-                                <label class="tekst">Name</label>
-                                <input type="text" placeholder="Input your name of food here..." id="name"/>
-                            </div>
-                            <div class="formInputField deleteModalNep">
-                                <label class="tekst">Price </label>
-                                <input type="text" placeholder="Input your price here..." id="price"/>
-                            </div>
-                            <div class="formInputField deleteModalNep">
-                                <label class="tekst">Image</label>
-                                <input type="text" placeholder="Input your image url here..." id="image"/>
-                            </div>
-                            
-                                <button class="button-6" role="button" type="submit">Submit</button>
-                            
-                        </form>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="putForm">
-                        <h1>Izmjeni postojeću panju</h1>
-                        <form class="putForm">
-                            <div class="formInputField ">
-                                <label class="tekst">ID</label>
-                                <input type="text" placeholder="Input your id here..."  id="id-update"/>
-                            </div>
-                            <div class="formInputField deleteModalNep">
-                                <label class="tekst">Name</label>
-                                <input type="text" placeholder="Input your name of food here..." id="name-update"/>
-                            </div>
-                            <div class="formInputField deleteModalNep">
-                                <label class="tekst">Price </label>
-                                <input type="text" placeholder="Input your price here..." id="price-update"/>
-                            </div>
-                            <div class="formInputField deleteModalNep">
-                                <label class="tekst">Image</label>
-                                <input type="text" placeholder="Input your image url here..." id="image-update"/>
-                            </div>
-                            
-                                <button class="button-6" role="button" type="submit">Submit</button>
-                        
-                            
-                        </form>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="deleteForm">
-                        <h1>Obriši panju</h1>
-                        <form class="deleteForm">
-                            <div class="formInputField ">
-                                <label class="tekst">ID</label>
-                                <input type="text" placeholder="Input your id here..."  id="id-delete"/>
-                            </div>
-                            <button class="button-6" role="button" type="submit">Submit</button>
-                            
-                            
-                        </form>
-                        </div>
-                    </div>
-                    
-         </div>
+<div class="updateForm">
+    <h1>Add New Data</h1>
+    <form class="form">
+        <div class="formInputField ">
+            <label class="tekst">ID</label>
+            <input type="text" placeholder="Input your id here..."  id="id"/>
         </div>
-    </div>
-</section>
+        <div class="formInputField deleteModalNep">
+            <label class="tekst">Name</label>
+            <input type="text" placeholder="Input your name of food here..." id="name"/>
+        </div>
+        <div class="formInputField deleteModalNep">
+            <label class="tekst">Price </label>
+            <input type="text" placeholder="Input your price here..." id="price"/>
+        </div>
+        <div class="formInputField deleteModalNep">
+            <label class="tekst">Image</label>
+            <input type="text" placeholder="Input your image url here..." id="image"/>
+        </div>
+        
+            <button class="button-6" role="button" type="submit">Submit</button>
+        
+        
+    </form>
+</div>
+<div class="putForm">
+    <h1>Update Existing Data</h1>
+    <form class="putForm">
+        <div class="formInputField ">
+            <label class="tekst">ID</label>
+            <input type="text" placeholder="Input your id here..."  id="id-update"/>
+        </div>
+        <div class="formInputField deleteModalNep">
+            <label class="tekst">Name</label>
+            <input type="text" placeholder="Input your name of food here..." id="name-update"/>
+        </div>
+        <div class="formInputField deleteModalNep">
+            <label class="tekst">Price </label>
+            <input type="text" placeholder="Input your price here..." id="price-update"/>
+        </div>
+        <div class="formInputField deleteModalNep">
+            <label class="tekst">Image</label>
+            <input type="text" placeholder="Input your image url here..." id="image-update"/>
+        </div>
+        
+            <button class="button-6" role="button" type="submit">Submit</button>
+      
+        
+    </form>
+</div>
+<div class="deleteForm">
+    <h1>Delete Data</h1>
+    <form class="deleteForm">
+        <div class="formInputField ">
+            <label class="tekst">ID</label>
+            <input type="text" placeholder="Input your id here..."  id="id-delete"/>
+        </div>
+        <button class="button-6" role="button" type="submit">Submit</button>
+        
+        
+    </form>
+</div>
 
 <!---Početak footera-->
 <footer class="footer-sec mt-5 mx-auto">
@@ -135,7 +121,7 @@
             <div class="col-lg-3 col-sm-6 mb-4 mb-xl-0 footer-widget">
                 <h4>Contact Info</h4>
                 <div class="footer-address">
-                    <p>Čikago 60</p>
+                    <p>Alijin Drevni Most na Drini 14</p>
                     <span>Phone: +387 62 247 356</span>
                     <span>email: amar.kamberovic.20@size.ba</span>
                 </div>

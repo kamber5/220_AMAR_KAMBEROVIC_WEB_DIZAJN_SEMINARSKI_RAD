@@ -6,9 +6,7 @@ body{
 #hero{
     display:table;
     width: 100%;
-    height: 10vh;
-    background: url(media/burek.jpg) top center;
-    background-size: cover;
+    height: 80vh;
 }
 @media (min-width: 1024px){
     #hero{

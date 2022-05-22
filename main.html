@@ -1,23 +1,168 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hrana</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
- <body>
-  
-    <div class="about-text">
-    <h2>Dzamija <br> Druga dzamija</h2>
+  <head>
+    <title>Javascript</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet"href="css/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  </head>
+  <body>       
+      <!--Hero Section-->
+      <section id="hero">
+          <div class="hero-container">
+              <div class="hero-logo">
+                  <img src="media/logo.jpg" alt="Panja Dobra">
+              </div>
+              <h1> Panja dobra</h1>
+              <h2>Naručite nekakvu finu panju ispod.</h2>
+              <div class="actions">
+                  <a href="#" class="main-1">Naruči</a>
+                  <a href="#" class="main-2"> Požali se </a>
+              </div>
+          </div>
+      </section>
+      <!---End of Hero Section-->
+
+<!--Deals of the Day -->
+<section>
+    <div class="section mt-5">
+        <div class="container-fluid">
+            <div class="section-title text-center">
+                <h3> Dobra panja za danas</h3>
+            </div>
+            <div class="row">
+                <!--Ovdje ide hrana iz apija -->
+            </div>
+        </div>
     </div>
+</section>
+<!---End of the Deals-->
 
-    
-<!----Javascript-->
-<script type="text/javascript" src="js/script.js"></script>
+<!--Kreiraj dil -->
+<section>
+    <div class="section mt-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                        <div class="updateForm">
+                            <h1>Add New Data</h1>
+                        <form class="form">
+                            <div class="formInputField ">
+                                <label class="tekst">ID</label>
+                                <input type="text" placeholder="Input your id here..."  id="id"/>
+                            </div>
+                            <div class="formInputField deleteModalNep">
+                                <label class="tekst">Name</label>
+                                <input type="text" placeholder="Input your name of food here..." id="name"/>
+                            </div>
+                            <div class="formInputField deleteModalNep">
+                                <label class="tekst">Price </label>
+                                <input type="text" placeholder="Input your price here..." id="price"/>
+                            </div>
+                            <div class="formInputField deleteModalNep">
+                                <label class="tekst">Image</label>
+                                <input type="text" placeholder="Input your image url here..." id="image"/>
+                            </div>
+                            
+                                <button class="button-6" role="button" type="submit">Submit</button>
+                            
+                        </form>
+                        </div>
+                        <div class="putForm">
+                        <h1>Update Existing Data</h1>
+                        <form class="putForm">
+                            <div class="formInputField ">
+                                <label class="tekst">ID</label>
+                                <input type="text" placeholder="Input your id here..."  id="id-update"/>
+                            </div>
+                            <div class="formInputField deleteModalNep">
+                                <label class="tekst">Name</label>
+                                <input type="text" placeholder="Input your name of food here..." id="name-update"/>
+                            </div>
+                            <div class="formInputField deleteModalNep">
+                                <label class="tekst">Price </label>
+                                <input type="text" placeholder="Input your price here..." id="price-update"/>
+                            </div>
+                            <div class="formInputField deleteModalNep">
+                                <label class="tekst">Image</label>
+                                <input type="text" placeholder="Input your image url here..." id="image-update"/>
+                            </div>
+                            
+                                <button class="button-6" role="button" type="submit">Submit</button>
+                        
+                            
+                        </form>
+                        </div>
+                        <div class="deleteForm">
+                        <h1>Delete Data</h1>
+                        <form class="deleteForm">
+                            <div class="formInputField ">
+                                <label class="tekst">ID</label>
+                                <input type="text" placeholder="Input your id here..."  id="id-delete"/>
+                            </div>
+                            <button class="button-6" role="button" type="submit">Submit</button>
+                            
+                            
+                        </form>
+                        </div>
+                    </div>
+         </div>
+        </div>
+    </div>
+</section>
 
-</body>
-</html>
-</body>
+<footer class="footer-sec mt-5 mx-auto">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-sm-6 mb-4 mb-xl-0 footer-widget">
+                <h4>O nama</h4>
+                <p>Jedan dva tri.</p>
+                <div class="footer-logo">
+                    <h3 class="text-white">Panja Dobra</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-4 mb-xl-0 footer-widget">
+                <h4>Contact Info</h4>
+                <div class="footer-address">
+                    <p>Čikago 60</p>
+                    <span>Phone: +387 62 247 356</span>
+                    <span>email: amar.kamberovic.20@size.ba</span>
+                </div>
+            </div>
+        </div>
+        
+            <div class="footer-bottom row align-items-center text-center
+            text-lg-left no-gutters">
+            <p class="footer-text m-0 col-lg-8 col-md-12">
+                Copyright&copy;<script>document.write(new Date().getFullYear());</script>
+                Čopirajt
+                <i class="fas fa-heart" aria-hidden="true"></i>
+            </p>
+            <div class="col-lg-4 col-md-12 text-center text-lg-right footer-social">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        
+        
+        </div>
+    </div>
+</footer>
+</div>
+</div>
+<!---End of the Deals-->
+
+
+    <!-- Optional JavaScript -->
+    <script type="text/javascript" src="js/script.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>
